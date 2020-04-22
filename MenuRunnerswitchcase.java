@@ -15,14 +15,18 @@ public class MenuRunnerswitchcase
 		int choice=scanner.nextInt();
 		int result=0;
 		switch (choice) {
-			case 1:result=number1+number2;
-			break;
-			case 2:result=number1-number2;
-			break;
-			case 3:result=number1*number2;
-			break;
-			case 4:result=number1/number2;
-			break;
+			case 1:
+				result=number1+number2;
+				break;
+			case 2:
+				result=number1-number2;
+				break;
+			case 3:
+				result=number1*number2;
+				break;
+			case 4:
+				result=number1/number2;
+				break;
 			default:
 				System.out.println("invalid input");
 		}
