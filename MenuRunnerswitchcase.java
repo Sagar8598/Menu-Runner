@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class MenuRunner
+public class MenuRunnerswitchcase
 {
 	public static void main(String[] args) {
 		Scanner scanner=new Scanner(System.in);
@@ -14,25 +14,17 @@ public class MenuRunner
 		System.out.print("Enter your choice :");
 		int choice=scanner.nextInt();
 		int result=0;
-		if(choice==1)
-		{
-			result=number1+number2;
-		}
-		else if(choice==2)
-		{
-			result=number1-number2;
-		}
-		else if(choice==3)
-		{
-			result=number1*number2;
-		}
-		else if(choice==4)
-		{
-			result=number1/number2;
-		}
-		else
-		{
-			System.out.println("invalid input");
+		switch (choice) {
+			case 1:result=number1+number2;
+			break;
+			case 2:result=number1-number2;
+			break;
+			case 3:result=number1*number2;
+			break;
+			case 4:result=number1/number2;
+			break;
+			default:
+				System.out.println("invalid input");
 		}
 		System.out.println("The result is :"+ result);
 	}
